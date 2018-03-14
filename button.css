@@ -7,6 +7,7 @@
   font-family: inherit;
   text-decoration: none;
   background: #d4d4d4;
+  border: 1px solid #d4d4d4;
   cursor: pointer;
   border-radius: 2px;
 }
@@ -56,17 +57,26 @@
 }
 .hc-btn-primary {
   background: rgb(49, 135, 233);
+  border: 1px solid rgb(49, 135, 233);
 }
 .hc-btn-success {
   background: rgb(42, 238, 156); 
+  border: 1px solid rgb(42, 238, 156); 
 }
 .hc-btn-warning {
   background: rgb(235, 150, 54);
+  border: 1px solid rgb(235, 150, 54);
 }
 .hc-btn-error {
   background: rgb(235, 54, 54);
+  border: 1px solid rgb(235, 54, 54);
 }
 
 .hc-btn-circle {
   border-radius: 20px;
+}
+
+.hc-btn-border {
+  background: white;
+  color: inherit;
 }
