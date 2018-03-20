@@ -1,4 +1,4 @@
-.hc-btn {
+.bh-btn {
   border: 0;
   padding: 0.5em 1em;
   display: inline-block;
@@ -12,19 +12,19 @@
   border-radius: 2px;
 }
 
-.hc-btn:hover,
-.hc-btn:focus {
+.bh-btn:hover,
+.bh-btn:focus {
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
-.hc-btn:focus {
+.bh-btn:focus {
   outline: none;
 }
-.hc-btn-active,
-.hc-btn:action{
+.bh-btn-active,
+.bh-btn:active{
   box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
 }
 
-.hc-btn-disabled {
+.bh-btn-disabled {
   background-image: none;
   filter: aplpa(opacity=40);
   opacity: 0.40;
@@ -33,50 +33,117 @@
   pointer-events: none;
 }
 
-.hc-btn-xs {
+.bh-btn-xs {
   font-size: 70%;
 }
 
-.hc-btn-sm {
+.bh-btn-sm {
   font-size: 85%;
 }
 
-.hc-btn-bg {
+.bh-btn-bg {
   font-size: 110%;
 }
 
-.hc-btn-xg {
+.bh-btn-xg {
   font-size: 125%;
 }
 
-.hc-btn-primary,
-.hc-btn-success,
-.hc-btn-warning,
-.hc-btn-error {
+.bh-btn-primary,
+.bh-btn-success,
+.bh-btn-warning,
+.bh-btn-error {
   color: white;
 }
-.hc-btn-primary {
+.bh-btn-primary {
   background: rgb(49, 135, 233);
   border: 1px solid rgb(49, 135, 233);
 }
-.hc-btn-success {
+.bh-btn-success {
   background: rgb(42, 238, 156); 
   border: 1px solid rgb(42, 238, 156); 
 }
-.hc-btn-warning {
+.bh-btn-warning {
   background: rgb(235, 150, 54);
   border: 1px solid rgb(235, 150, 54);
 }
-.hc-btn-error {
+.bh-btn-error {
   background: rgb(235, 54, 54);
   border: 1px solid rgb(235, 54, 54);
 }
 
-.hc-btn-circle {
+.bh-btn-circle {
   border-radius: 20px;
 }
 
-.hc-btn-border {
+.bh-btn-border {
   background: white;
   color: inherit;
+}
+
+/* 幽灵按钮 */
+.bh-btn-ghost {
+  position: relative;
+  background: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  transition:  2s;
+}
+
+.bh-btn-ghost_line {
+  position: absolute;
+  background: #4db5c7;
+  transition: 0.5s;
+}
+/* 幽灵按钮：右边线 */
+.bh-btn-ghost_line__right{
+  width: 2px;
+  height: 0;
+  right: -2px;
+  top: -100%;
+}
+
+.bh-btn-ghost:hover .bh-btn-ghost_line__right{
+  top:0;
+  height: 100%;
+}
+
+/*  幽灵按钮:左边线 */
+.bh-btn-ghost_line__left {
+  width: 2px;
+  height: 0;
+  left: -2px;
+  bottom: -100%;
+}
+
+.bh-btn-ghost:hover .bh-btn-ghost_line__left {
+  bottom:0;
+  height: 100%;
+}
+
+
+/*  幽灵按钮:上边线 */
+.bh-btn-ghost_line__top {
+  width: 0;
+  height: 2px;
+  top: -2px;
+  left: -100%;
+}
+
+.bh-btn-ghost:hover .bh-btn-ghost_line__top {
+  left:0;
+  width: 100%;
+}
+
+
+/*  幽灵按钮:左边线 */
+.bh-btn-ghost_line__bottom {
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: -100%;
+}
+
+.bh-btn-ghost:hover .bh-btn-ghost_line__bottom {
+  right:0;
+  width: 100%;
 }
